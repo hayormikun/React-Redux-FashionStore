@@ -2,7 +2,7 @@
 
 const ProductInfo = () => {
     return (
-        <div>
+        <div className="ui grid container">
             <h2>Product info</h2>
         </div>
     )

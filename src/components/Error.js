@@ -1,7 +1,7 @@
 
 const Error = () => {
     return (
-        <div>
+        <div className="grid container">
             <p>404, Page not found</p>
         </div>
     )
