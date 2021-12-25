@@ -2,18 +2,15 @@ import { SET_PRODUCTS, SELECTED_PRODUCT, REMOVE_SELECTED_PRODUCT} from "./produc
 
 
 const initialState = {
-    products: [{
-        id: 1,
-        title: 'hayor',
-        category: 'programming'
-    }],
+    products: []
 
 }
 
 const productReducer = (state= initialState, action) => {
     switch (action.type) {
         case SET_PRODUCTS: return {
-            state
+            ...state,
+            products: action.payload
         }
 
         // case SELECTED_PRODUCT: return {
